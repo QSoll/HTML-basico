@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>HTML na prática</title>
+		<link rel="stylesheet" type="text/css" href="css/html.css">
+	</head>
+
+	<body>
+        <div class="container">
+            <header>
+                <h1 hidden>Bootcamp DIO - NTT - HTML NA PRÁTICA</h1>
+                <img src="img/Html_desafio1.jpg" class="respon-img" id="inicio"  alt="Banner com imagem de código HTML"/>
+            </header>       
+
+            <article class="caixa"><!--ferramentas utilizadas e vsc-->
+                    
+                <h2>Páginas Web com HTML</h2><br>					
+                <p>Vamos falar um pouco sobre HTML, das principais ferramentas utilizadas para a construção de uma página.html, da sua estrutura básica, as tags mais utilizadas, como criar links, listas e muito mais.</p>
+                <p id="ferramentas_utilizadas"></p>
+                <br>
+                <br>
+                <hr>
+                <h3 >FERRAMENTAS UTILIZADAS</h3>
+                <p><small>É preciso ter todas as ferramentas instaladas e configuradas.</small></p>
+                <p><small>Caso ainda não tenha, acesse os sites abaixo e prepare tudo para poder começar a <code>&lt;codar&gt;</code> .</small></p>
+                <p>... Verifique e mantenha seus softwares e app<small>s</small> instalados sempre atualizados...
+                <p>Qualquer dúvida, entre em contato. &#128516; </p>
+                <br>	
+                <br>
+                <p id="VSC"></p>
+                <div class="cx">				
+                    <p ><sub><img src="img/vsc.jpg" alt="Logotipo do Visual Studio Code" width="25" height="25"></sub><b><i> Visual Studio Code</i></b> é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS.</p>
+                    <p>Inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código.<sup><q>Wikipédia</q></sup></p>
+                    <p>Após instalar o VSC, vá na barra lateral esquerda / extensões e na barra de pesquisa superior da barra, pesquise por <q>LIVE SERVER<q>  e instale. </p>
+                    <p>O Live Server permite que você veja no navegador o resultado do que você está codando. Para isso, após ter salvo e iniciado o seu arquivo.html, vá na barra inferior e clique em <q>Go Live</q> e será aberta numa nova aba com a saída visual do seu código, igual como ficará no navegador.</p>
+                    <p>Após instalado, é recomendável fazer algumas configurações e instalações de outras extensões que te ajudarão a obter melhor desempenho enquanto estiver utilizando essa ferramenta, como AUTO RENAME TAG, PRETTIER, COLOR HIGHLIGHT, COLORIZE, INDENT-RAINBOW, RAIMBOW BRACKETS, COPILOT e além desses existem muitos outros, cada um com sua funcionalidade . Na internet poderá facilmente achar vários tutoriais que o ajudarão nessa tarefa.</p>
+                    <p>Estando com tudo funcionando corretamente, já pode começar a dar seus primeiros passos, ou <code>&lt;codigos&gt;</code> em HTML.</p>	
+                    <div class="links">
+                        <div class="linksint">
+
+                            <div class="link"><!--link pagina vsc-->
+                                <a href="https://code.visualstudio.com/"><abbr title="Ir para a página do Visual Studio Code">Download</abbr></a>	
+                            </div><!--final link-->			
+
+                            <div class="link">
+                                <blockquote cite="Youtube - Como instalar e configurar o VSC">
+                                    <a href="https://youtu.be/9miOzgB4KC0/">
+                                        <abbr title="Youtube - Como instalar e configurar o VSC">Ajuda</abbr>
+                                    </a>					
+                                </blockquote>
+                            </div><!--final link-->
+
+                        </div><!--final linksint-->
+
+                    </div><!--final links-->
+                </div><!--final caixas VSC-->
+
+            </article><!--final ferramentas utilizadas e vsc-->
+
+            <article id="chrome" class="caixa">
+
+                <div id="caixas Chrome" class="cx">				
+                    <!--<h4 class="titulo">Chrome</h4>-->
+                    <p><sub><img src="img/chrome.png" alt="Logotipo do Chrome" width="25" height="25"></sub><b><i> Chrome</i></b> é um navegador de internet desenvolvido pela Google...para o Microsoft Windows, e mais tarde foi portado para Linux, Mac, iOS e Android...atualmente está disponível, em mais de 51 idiomas, para as plataformas Windows, Mac OS X, Android, iOS, Ubuntu, Debian, Fedora e openSUSE</p>
+                    <p>É o navegador mais usado no mundo, com 66,93% dos usuários de Desktop, contra 10,63% do Microsoft Edge, 8,02% do Safari e 7,36% do Mozilla Firefox, segundo a StatCounter. Além de desenvolver o Google Chrome, o Google ainda patrocina o Mozilla Firefox, um navegador desenvolvido pela Fundação Mozilla<sup><q>Wikipédia</q></sup></p>
+
+                    <div class="links">
+                        <div class="linksint">
+                            <div class="link">
+                                <a href="https://www.google.com/intl/pt-BR/chrome/"><abbr title="Ir para a página do Chrome">Download</abbr></a>	
+                            </div><!--final link para o chrome-->			
+
+                            <div class="link">
+                                <blockquote cite="Youtube - Como instalar e configurar o Chrome">
+                                    <a href="https://youtu.be/jTLBM5HvugA">
+                                        <abbr title="Chrome - Como instalar o Chrome">Ajuda</abbr>
+                                    </a>					
+                                </blockquote>
+                            </div><!--final link para youtube - como instalar chrome-->
+
+                        </div><!--final linksint-->
+                    </div><!--final links-->
+
+                </div><!--final caixas chorome-->
+
+            </article><!--final chrome-->
+
+            <article id="inspetor_de_elementos" class="caixa">
+                <br>
+                <br>
+                <div class="cx">
+                    <!--<h4 class="titulo">Inspetor de elementos do Chrome</h4>	-->			
+                    <p><sub><img src="img/chromeInspetor.png" alt="Logotipo do inspetor de elementos do Chrome" width="25" height="25"></sub><b><i> Inspetor de elementos do Chrome</i></b>...Seu kit de ferramentas é essencial e vital para o desenvolvimento web e, por isso mesmo, é um ferramental indispensável para se ter no dia-a-dia.</p>
+                    <p>É mais do que imprescindível saber mexer nas DevTools para inspecionar elementos, verificar conteúdos, debugar layouts, manipular estilos, simular diversos tipos de dispositivos...<sup><q>dpw</q></sup></p>
+                    <p>Abrir o INSPETOR de elementos é super fácil: Já na página do google chrome que deseja inspecionar, clique em qualquer lugar da tela com o lado direito do mouse e no menu que aparecer, embaixo, clique em INSPECIONAR, ou simplesmete pressione a tecla F<sup>12</sup> do seu teclado.</p>
+                    <p>Alguns outros browsers também oferecem essa ferramenta de forma similar.</p>
+                    <div class="links">
+                        <div class="linksint">
+
+                            <div class="link">
+                                <blockquote cite="Youtube - Como utilizar o Inspetor de elementos do Chrome">
+                                    <a href="https://youtu.be/KMZKWCcTkm4">
+                                        <abbr title="Como utilizar o inspetor de elemento do Chrome">Ajuda</abbr>
+                                    </a>					
+                                </blockquote>
+                            </div><!--final link-->
+
+                        </div><!--final linksint-->
+                    </div><!--final links-->
+                </div><!--final caixas inspetor_de_elementos-->
+
+            </article><!--final inspetor_de_elementos do chrome-->
+
+            <article id="estrutura_basica" class="artigo">
+                <br>
+                <br>
+                <div class="art-intro">
+                    <h3 >ESTRUTURA BÁSICA DO HTML</h3>
+                    <p><small>Já está com todas as ferramentas instaladas e configuradas?</small></p>
+                    <p><small>Caso não, volte para o tópico anterior e prepare tudo.</small></p>
+                    <p><small>Se sim &#128516; bora começar a <code>&lt;codar&gt;</code></small></p>
+                </div><!--finalart-intro-->			
+                        
+                <div class="art">
+                    <ol>
+                        <li>Abra o <sub><img src="img/vsc.jpg" alt="Logotipo do Visual Studio Code" width="35" height="35"></sub><b><i></i></b></li>
+                        <li>Crie uma pasta para seu projeto e nomeie como <b>projeto1</b></li>
+                        <li>Dentro da pasta <b>projeto1</b>, criar a pasta <b>img</b></li>
+                        <li>Dentro da pasta <b>projeto1</b>, criar a pasta <b>css</b></li>
+                        <li>Dentro da pasta <b>projeto1</b>, criar o arquivo <b>index.html</b></li>
+                        <p><sub><img src="img/logoMaoDireita.png" alt="ícone mão apontando para baixo" width="20" height="20"></sub> Agora, dentro do arquivo <b>index.html</b> vamos iniciar nossas primeiras linhas de <code>&lt; codigo &gt;</code></p>
+                    </ol>
+                        
+                    <div id="texto" class="texto">
+                        <p>Se precisar de ajuda, clique no link abaixo  e siga o passo a passo  </p>
+                        
+                        <p><a href="https://youtu.be/grx667IwkH8" class="link-texto"><abbr title="Como criar um projeto no VSC"><small>Como criar um projeto no VSC</small></abbr></a></p>
+                            
+                        <p>Abordaremos 2 maneiras de criar a estrutura básica do HTML rapidamente</p>
+                    </div> <!--final texto-->
+                        
+                    <ol><!--texto-->
+                        <p>Na linha 1 do arquivo <b>index.html</b>, digitamos:</p>
+                        <li> <sub><img src="img/logoMaoDireita.png" alt="ícone mão apontando para baixo" width="20" height="20"></sub><b> ! </b> e pressionamos <b> enter </b></li>
+                        <p>ou</p>							
+                        <li> <sub><img src="img/logoMaoDireita.png" alt="ícone mão apontando para baixo" width="20" height="20"></sub><b> html5 </b> e pressionamos a tecla<b> tab </b> ou <b> enter </b></li>
+                    </ol>
+
+                    <div id="texto" class="texto">
+                        <p>O resultado será como a imagem abaixo</p>
+                        <img src="img/img-estruturaHtml.jpg" alt="Imagem da estrutura básica do HTML no VSC" class="respon-img" id="fig1">
+                        <p><i> Fig.1 </i> <img src="img/logoMaoCima.fw.png" alt="ícone mão apontando para baixo" width="20" height="20"> Troque <b>"en"</b> por <b>"pt-br"</b> e <b> Document</b> por <b> Hello, world !!!</b></p>
+                        <p>Na <i>Fig.1</i>, acima, a seta rosa indica onde está escrito <b>Go live</b>  . Clique em <b>Go live</b> e veja o resultado no browser, que, dependendo da configuração, poderá estar incorporado dentro do seu VSC ou numa nova aba no navegador.</p>
+                        <p>&#128516;  <small>Pronto. Você fez sua primeira página HTML </small>&#128516; </p>
+                    </div><!--final texto-->
+
+                </div><!--final art-->
+
+                <hr>
+
+            </article><!--final estrutura_basica-->
+                
+            <article id="tags" class="artigo"><!--tags-->
+                <br>
+                <br>
+                <div class="art-intro"><!--titulo-->
+                    <h3 id="tags">TAGs HTML</h3>	
+                </div><!--final titulo-->			
+                        
+                <div id="html" class="art"><!--introdução e tags html-->
+                    <!--introdução-->
+                    <p>Com exceção de algumas, a maioria das tags tem uma abertura <b> <code>&lt;  &gt;</code></b> e um fechamento <strong> <code>&lt; / &gt;</code> </strong></p>
+                    <p>A seguir, vamos abordar sobre as tags mais utilizadas:</p>
+                    <BR>
+                    <!--fim introdução-->
+                    <ol> <!-- tags html-->
+
+                        <li><!-- ol li tag HTML-->
+                            <p><b><code>&lt; HTML &gt;</code> <code>&lt; /HTML &gt;</code></b> Tudo que estiver dentro dela será uma página html </p>
+                            <hr>
+                            
+                        </li><!--final tag HTML-->
+
+                        <li id="head"><!-- ol li tag head-->
+                            <p><b><code>&lt; head &gt;</code> <code>&lt; /head &gt;</code></b> - Dentro dela ficam informações necessárias para a navegação, o título da página e links de referência para linkar, por exemplo, a página html a um arquivo css. <small><i>Ver exemplo da tag <q>head</q> na Fig, 1</i></small></p>
+                            <hr>
+                        </li><!--final tag head-->
+                            
+                        <li id="body"><!-- ol li tag body-->
+                            <p><b><code>&lt; body &gt;</code> <code>&lt; /body &gt;</code></b> - Dentro dela teremos o conteúdo de todo o site. Small> Ver <a href="#fig1"><i>Fig.1</i> </a> </p>
+                            <hr>	
+                        </li><!--final tag body-->
+                            
+                        <p id="comentarios"><!--  como fazer comentários  em html-->
+                            <p><!-- ol li tag comentario-->
+                            <hr>
+                            <p><img src="img/logoMaoDireita.png" width="20" height="20"> Quando estamos codando, é muito comum precisarmos fazer comentários, mas que não podem aparecer no navegador</p>
+                            <p>Como podemos fazer isso? <img src="img/logoMaoBaixo.png" width="20" height="20"></p>
+                                <p>Usando o <b><code>&lt; !-- Comentário --&gt;</code> </b> </p>
+                                <p>Código:</p>
+
+                                <p ><code>&lt;p&gt;</code> 1- Muito usado para deixar o código mais organizado. <code>&lt; /p &gt;</code> </p>
+                                <p style="color:green"><code>&lt;!-- Comentários não aparecem no navegador--&gt;</code> </p>
+                                        
+                                <p><code>&lt;p&gt;</code> 2- Sempre bom usar para explicar o que está sendo codado. <code>&lt; /p &gt;</code> </p>
+                                <br>
+                                <p>No navegador:</p>
+                                <p>1- Muito usado para deixar o código mais organizado.</p>
+                                <p>2- Sempre bom usar para explicar o que está sendo codado.</p>
+                                <hr>
+                                <hr>							
+                        </p><!--final comofazer comentários em html-->	
+
+                        <p><!-- introdução para outras tags html-->
+                            <img src="img/logoMaoDireita.png" width="20" height="20"> <small>Indo além dessa estrutura criada rapidamente, temos muitas outras tags elementares, como:</small>
+                        </p> <!--final para introdução de outras tags html-->
+                        <br>
+                        <br>	
+
+                        <li id="header"><!-- ol li tag header-->
+                            <p><strong><code>&lt; header &gt;</code> <code>&lt; /header &gt;</code></strong>  Tag introdutória, normalmente contém uma tag  <strong><code>&lt; h1 &gt;</code> <code>&lt; /h1 &gt;</code></strong>, para informar o assunto, título, introdução do site, uma ou várias imagens em formato de slider, ou um video, podendo ou não conter links.</p>
+                            <p>Podemos usá-la dentro de algumas tags ao longo da página HTML, mas a usamos uma única vez dentro de cada tag . </p>
+                            <hr>
+                        </li><!--final ol li tag header-->	
+
+                        <li id="h1"><!-- ol li tag h1-->
+                                <p><strong><code>&lt; h1 &gt;</code> <code>&lt; /h1 &gt;</code></strong> É recomendado usá-la apenas uma vez em cada página html.</p>
+                                <p>É importante para SEO e as palavras-chaves usadas nessa tag indicam ao google o assunto principal da página.
+                                
+                                <p>Por alguns aspectos, às vezes não queremos que apareça no navegador, então podemos oculta-la usando o atributo <strong>hidden</strong> <sub><img src="assets/img/logoMaoBaixo.png" width="20" height="20"></sub> </p>
+                                <p>Código:</p>
+                                <p style="color:green"><code>&lt; !-- No exemplo abaixo, o titulo aparecerá no navegador -- &gt;</code></p>
+                                <p> <code>&lt; header &gt;</code> </p>
+                                <p>&nbsp &nbsp &nbsp<code>&lt; h1 &gt;</code> Exemplo de uso da tag <code>&lt; q &gt;</code> h1 <code>&lt; q &gt;</code> para aparecer no navegador. <code>&lt; /h1 &gt;</code> </p>
+                                <p><code>&lt; /header &gt;</code> </p>
+                                <p>No navegador:</p>
+                                <p>Exemplo de uso da tag <q>h1</q> para aparecer no navegador.</p>	
+                                <br>		
+                                <p>Código:</p>
+                                <p style="color:green"><code>&lt; !-- No exemplo abaixo, o titulo não aparecerá no navegador -- &gt;</code></p>
+                                <p> <code>&lt; header &gt;</code> </p>
+                                <p>&nbsp &nbsp &nbsp<code>&lt; p &gt;</code> 1- Exemplo de uso da tag <code>&lt; q &gt;</code>  h1 hidden<code>&lt; q &gt;</code> para o item 2 não aparecer no navegador. <code>&lt; /p &gt;</code> </p>
+                                <p>&nbsp &nbsp &nbsp<code>&lt; h1 <b>hidden</b>&gt;</code> 2- Isso não vai aparecer no navegador  <code>&lt; /h1 &gt;</code> </p>
+                                <p><code>&lt; /header &gt;</code> </p>
+                                <p>No navegador:</p>
+                                <p>1- Exemplo de uso da tag <q>h1 hidden</q> para o item 2 não aparecer no navegador.</p>	
+                                <hr>
+                        </li><!--final ol li tag h1-->				
+
+                        <li id="p"><!-- ol li tag p-->
+                            <p><b><code>&lt; p &gt;</code> </b><b><code>&lt; /p &gt;</code></b> Tag usada para formar parágrafos</p>
+                            <p>Código:</p>
+                            <p><code>&lt;p&gt;</code> 1- Pode ser usada para criar uma linha ou mais . <code>&lt; /p &gt;</code> </p>
+                            <p><code>&lt;p&gt;</code> 2- Podemos escrever um texto inteiro com essa tag. <code>&lt; /p &gt;</code> </p>
+                            <p><code>&lt;p&gt;</code>3- Tag usada para formar parágrafos, frases, textos...Tag usada para formar parágrafos, frases, textos...Tag usada para formar parágrafos, frases, textos...Tag usada para formar parágrafos, frases, textos...<code>&lt; /p &gt;</code> </p>
+                            <p>No navegador:</p>
+                            <p>1- Pode ser usada para criar uma linha ou mais.</p>
+                            <p>2- Podemos escrever um texto inteiro com essa tag.</p>
+                            <p>3- Tag usada para formar parágrafos, frases, textos...Tag usada para formar parágrafos, frases, textos...Tag usada para formar parágrafos, frases, textos...Tag usada para formar parágrafos, frases, textos...</p>
+                            <hr>							
+                        </li><!--final ol li tag p-->
+
+                        <li id="br"><!-- ol li tag br-->
+                            <p><b><code>&lt; br &gt;</code></b> Cria um espaço entre as linhas.<sub><img src="img/logoMaoBaixo.png" width="20" height="20"></p>
+                            <table style="border:0">
+                                <tr>
+                                        <td> &nbsp &nbsp &nbsp Código</td>
+                                        <td>&nbsp</td>
+                                        <td>&nbsp</td>
+                                        <td>&nbsp Navegador</td>
+                                </tr>
+                                <tr>				
+                                        <td><code>&lt;p&gt;</code> Linha 1 <code>&lt;/p&gt;</code> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td>&nbsp &nbsp &nbsp Linha 1</td>
+                                </tr>
+                                <tr>			
+                                        <td><code>&lt;p&gt;</code> Linha 2 <code>&lt;/p&gt;</code> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td>&nbsp &nbsp &nbsp Linha 2 </td>
+                                </tr>
+                                <tr>				
+                                        <td><b><code> &lt;br&gt;</b></td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td></td>
+                                </tr>
+                                <tr>			
+                                        <td><code>&lt;p&gt;</code> Linha 3 <code>&lt;/p&gt;</code> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td>&nbsp &nbsp &nbsp Linha 3 </td>
+                                </tr>
+                                <br>
+                            </table>
+                            <br>
+                            <small>
+                                <p>Ob. O exemplo acima foi construído com uma tabela</p>
+                                <p>Use o inspetor de elementos para verificar como foi feita essa tabela e pratique construindo uma no seu Visual Studio Code</p>
+                                <p><a href="#inspetor_de_elementos">Inspetor de elementos</a></p>
+                            </small>
+                            <hr>			
+                        </li><!--final ol li tag br-->						
+
+                        <li id="hr"><!-- ol li tag hr-->
+                                <p><b><code>&lt; hr &gt;</code> </b> Cria uma linha horizontal.</p>
+                                <p>Código:</p>
+                                <p><code>&lt;p&gt;</code> - Abaixo temos um exemplo do uso dessa tag.<code>&lt; /p &gt;</code> </p>
+                                <p><code>&lt;hr&gt;</code></p>
+                                <p><code>&lt;hr&gt;</code></p>
+                                <p><code>&lt;p&gt;</code> - Acima temos um exemplo do uso dessa tag.<code>&lt; /p &gt;</code> </p>
+                                <p><code>&lt;p&gt;</code> - Essa tag pode ser estilizada com CSS.<code>&lt; /p &gt;</code> </p>					<br>	 
+                                <p>No navegador:</p>
+                                <p>- Abaixo temos um exemplo do uso dessa tag.</p>
+                                <hr>
+                                <hr>
+                                <p>- Acima temos um exemplo do uso dessa tag.</p>
+                                <p>- Essa tag pode ser estilizada com CSS.</p>
+                                <br>
+                                <hr>	
+                        </li><!--final ol li tag hr-->
+
+                        <li id="i"><!-- ol li tag i-->
+                                <p><b><code>&lt; i &gt;</code> </b><b><code>&lt; /i &gt;</code></b> Deixa as palavras dentro da tag em itálico.</p>
+                                <p>Código:</p>
+                                <p><code>&lt;p&gt;</code> 1- Isso é um <b><code>&lt;i &gt;</code> exemplo <code>&lt; /i &gt;</code></b> do uso dessa tag.<code>&lt; /p &gt;</code> </p>
+                                <p>No navegador:</p>
+                                <p>1- Isso é um <i>exemplo</i> do uso dessa tag.</p>
+                                <hr>						
+                        </li><!--final ol li tag i-->
+
+                        <li id="mark"><!-- ol li tag mark-->
+                                <p><b><code>&lt; mark &gt;</code> </b><b><code>&lt; /mark &gt;</code></b> Deixa as palavras dentro da tag sublinhadas.</p>
+                                <p>Código:</p>
+                                <p><code>&lt;p&gt;</code> 1- Isso é um <code>&lt;mark &gt;</code> exemplo  do uso dessa tag.<code>&lt; /mark &gt;</code><code>&lt; /p &gt;</code> </p>
+                                <p>No navegador:</p>
+                                <p>1- Isso é um <mark>exemplo do uso dessa tag.</mark></p>
+                                <hr>						
+                        </li><!--final ol li tag mark-->
+
+                        <li id="small"><!-- ol li tag small-->
+                                <p><b><code>&lt; small &gt;</code> </b><b><code>&lt; /small &gt;</code></b> Deixa as palavras dentro da tag um pouco menores.</p>
+                                <p>Código:</p>
+                                <p><code>&lt;p&gt;</code> 1- Isso é um <code>&lt; small &gt;</code> exemplo  do uso dessa tag.<code>&lt; /small &gt;</code><code>&lt; /p &gt;</code> </p>
+                                <br>
+                                <p>No navegador:</p>
+                                <p>1- Isso é um <small>exemplo do uso dessa tag.</small></p>
+                                <hr>						
+                        </li><!--final ol li tag small-->
+
+                        <li id="sup"><!-- ol li tag sup-->
+                                <p><b><code>&lt; sup &gt;</code> </b><b><code>&lt; /sup &gt;</code></b> Deixa as palavras dentro da tag elevadas.</p>
+                                <p>Código:</p>
+                                <p><code>&lt;p&gt;</code> H<code>&lt; sup &gt;</code> 2<code>&lt; /sup &gt;</code>O<code>&lt; /p &gt;</code> </p>
+                                <br>
+                                <p>No navegador:</p>
+                                <p>H<sup> 2 </sup>O</p>
+                                <hr>						
+                        </li><!--final ol li tag sup-->
+
+                        <li id="sub"><!-- ol li tag sub-->
+                                <p><b><code>&lt; sub &gt;</code> </b><b><code>&lt; /sub &gt;</code></b> Deixa as palavras dentro da tag um pouco abaixo das outras palavras.</p>
+                                <p>Código:</p>
+                                <p><code>&lt;p&gt;</code> CO <code>&lt; sub &gt;</code> 2 <code>&lt; /sub &gt;</code><code>&lt; /p &gt;</code> </p>
+                                <br>
+                                <p>No navegador:</p>
+                                <p>CO<sub> 2 </sub></p>
+                                <hr>						
+                        </li><!--final ol li tag sub-->
+
+                    <!--ol li tag u - observação: não funcionou nos navegadores--
+                        <li><!- ol li tag u->
+                            <p><b><code>&lt; u &gt;</code> </b><b><code>&lt; /u &gt;</code></b> Deixa as palavras dentro da tag sublinhadas.</p>
+                            <p>Código:</p>
+                            <p><code>&lt;p&gt;</code> 1- Isso é um <code>&lt; u &gt;</code> exemplo  do uso dessa tag.<code>&lt; /u &gt;</code><code>&lt; /p &gt;</code> </p>
+                            <br>
+                            <p>No navegador:</p>
+                            <p>1- Isso é um <u> exemplo do uso dessa tag. </u> </p>
+                            <hr>						
+                        </li>
+                    <!-final ol li tag u que não funcionou-->
+
+                    <!--ol li tag del - observação: não funcionou nos navegadores--
+                        <li><!- ol li tag u->
+                            <p><b><code>&lt; del &gt;</code> </b><b><code>&lt; /del &gt;</code></b> Deixa as palavras dentro da tag riscadas.</p>
+                            <p>Código:</p>
+                            <p><code>&lt;p&gt;</code> 1- Isso é um <code>&lt; del &gt;</code> exemplo  do uso dessa tag.<code>&lt; /del &gt;</code><code>&lt; /p &gt;</code> </p>
+                            <br>
+                            <p>No navegador:</p>
+                            <p>1- Isso é um <del> exemplo do uso dessa tag. </del> </p>
+                            <hr>						
+                        </li>
+                    <!-final ol li tag del que não funcionou-->
+
+                        <li id="b"><!-- ol li tag b-->
+                                <p><b><code>&lt; b &gt;</code> </b><b><code>&lt; /b &gt;</code></b> Deixa as palavras dentro da tag em negrito.</p>
+                                <p>Código:</p>
+                                <p><code>&lt;p&gt;</code> Isso é um <b><code>&lt;b &gt;</code> exemplo <code>&lt; /b &gt;</code></b> do uso dessa tag. <code>&lt; /p &gt;</code> </p>
+                                <p>No navegador:</p>
+                                <p>Isso é um <b>exemplo</b> do uso dessa tag.</p>
+                                <hr>							
+                        </li><!--final ol li tag b-->
+
+                        <li id="strong"><!-- ol li tag strong-->
+                                <p><b><code>&lt; strong &gt;</code> </b><b><code>&lt; /strong &gt;</code></b> Deixa as palavras dentro da tag em negrito da mesma forma que a tag <q>b</q>, sendo que a diferença é apenas questão de semântica de código para dar ênfase ao contexto.</p>
+                                <p>Código:</p>
+                                <p><code>&lt;p&gt;</code> Isso é um <b><code>&lt;strong &gt;</code> exemplo <code>&lt; /strong &gt;</code></b> do uso dessa tag. <code>&lt; /p &gt;</code> </p>
+                                <p>No navegador:</p>
+                                <p>Isso é um <b>exemplo</b> do uso dessa tag.</p>
+                                <hr>							
+                        </li><!--final ol li tag strong-->
+
+                        <li id="q"><!-- ol li tag q-->
+                            <p><b><code>&lt; q &gt;</code> </b><b><code>&lt; /q &gt;</code></b> Coloca as palavras dentro da tag entre aspas.</p>
+                            <p>Código:</p>
+                            <p><code>&lt;p&gt;</code> Isso é um <code>&lt;q &gt;</code> exemplo <code>&lt; /q &gt;</code> do uso dessa tag. <code>&lt; /p &gt;</code> </p>
+                            <p>No navegador:</p>
+                            <p>Isso é um <q>exemplo</q> do uso dessa tag.</p>
+                            <hr>							
+                        </li><!--final ol li tag q-->
+
+                        <li id="blockquote-cite"><!-- ol li tag blockquote e cite q-->
+                            <p><b><code>&lt; blockquote &gt;</code> </b><b><code>&lt; /blockquote &gt;</code></b> Utilizado para citações.</p>
+                            <p>Observe abaixo a diferença quando usada com a tag <b>cite</b> e quando usada com a tag <b>q</b></>
+                            <p>Código:</p>
+                            <p><code>&lt;blockquote&gt;</code> 1- Seja a mudança que você quer ver no mundo. <code>&lt; q &gt;</code> Mahatma Gandhi <code>&lt; /q &gt;</code> <code>&lt;blockquote &gt;</code> </p>
+                            <br>
+                            <p><code>&lt;blockquote&gt;</code> 2- Um grande passo para a humanidade foi a descoberta da corrente alternada, por <code>&lt; cite &gt;</code> Nikola Tesla <code>&lt; /cite &gt;</code> <code>&lt;blockquote &gt;</code> </p>
+                            <br>
+                            <p>No navegador:</p>
+                            <p><blockquote>1- Seja a mudança que você quer ver no mundo. <q> Mahatma Gandhi </q></blockquote></p>
+                            <p><blockquote>2- Um grande passo para a humanidade foi a descoberta da corrente alternada, por <cite>Nikola Tesla</cite></blockquote></p>
+
+                            <hr>							
+                        </li><!--final ol li tag blockquote e cite-->
+
+                        <li id="abbr"><!-- ol li tag abbr-->
+                            <p><b><code>&lt; abbr &gt;</code> </b><b><code>&lt; /abbr &gt;</code></b> Para abreviações, referências. No exemplo abaixo, quando passa o mouse sobre a palavra MEI, aparecerá uma janelinha com uma abreviação ou comentário.</p>
+                            <p>Código:</p>
+                            <p>  <code>&lt;p&gt;</code> Muitos empreendedores autônomos aderem ao <code>&lt;abbr title="Microempreendedor individual" &gt;</code> Mei <code>&lt; /abbr &gt;</code> atualmente.<code>&lt; /p &gt;</code> </p>
+                            <p>No navegador:</p>
+                            <p>Muitos empreendedores autônomos aderem ao <abbr title="Microempreendedor individual">MEI</abbr> atualmente.</p>
+                            <hr>							
+                        </li><!--final ol li tag abbr-->
+
+                        <li id="a"> <!-- ol li tag a-->
+                            <p><b><code>&lt; a &gt;</code> </b><b><code>&lt; /a &gt;</code></b> Cria um vínculo, link.</p>
+                            <p>Código:</p>
+                            <p><code>&lt; a href = "#topo"&gt;</code> Topo dessa página<code>&lt; /a &gt;</code></p>
+                            <p><code>&lt; a href = "https://google.com"&gt;</code> Google<code>&lt; /a &gt;</code></p>
+                            <p><code>&lt; a href = "mailto:sol.morcillo@yahoo.com"&gt;</code> <code>&lt; abbr title="Me enviar um e-mail" &gt;</code> E-mail <code>&lt; /abbr &gt;</code> <code>&lt; /a &gt;</code></p>
+                            <p><code>&lt; a href = "https|://wa.me/5528988069681"&gt;</code> <code>&lt; abbr title="Conversar pelo whatsApp" &gt;</code>WhatsApp <code>&lt; /abbr &gt;</code><code>&lt; /a &gt;</code></p>
+                            <br>
+                            <p>No navegador:</p>
+                            <p><a href="#topo">Topo dessa página</a></p>
+                            <p><a href="https://google.com">Google</a></p>
+                            <p><a href="mailto:sol.morcillo@yahoo.com"><abbr title="Me enviar um e-mail">E-mail</abbr></a></p>
+                            <p><a href="https://wa.me/5528988069681"><abbr title="Conversar pelo WhatsApp">WhatsApp</abbr></a></p>
+                            <hr>							
+                        </li><!--final ol li tag a-->
+
+                        <li id="h1ateH6"><!-- ol li tags h1 até h6-->
+                                <P><b>h2 até h6</b> </P>
+                                <p>Tags usadas para títulos, subtítulos e assim por diante.</p>
+                                <p> Cada uma dessas tags tem seu tamanho próprio (isso pode ser mudado e estilizado com css)</p>
+                                <p>Definem o nível de hierarquia dos títulos numa página html, sendo que h1 é o de mais alta importancia e o h6 o de menor importancia.</p>
+                                <p>Como já falamos anteriormente, o <b>h1</b> é o mais importante inclusive para SEO e só deve ser usado uma vez em cada página html.</p>
+                                <p><strong>h2, h3, h4, h5</strong> e <b>h6</b>, podem ser usados mais de uma vez em cada página.</p>
+                                <div id="texto" class="texto"> <!--texto da tag h1 a h6-->
+                                <p><img src="img/logoMaoBaixo.png" width="20" height="20"> Abaixo podemos ver como funciona <img src="img/logoMaoBaixo.png" width="20" height="20"></p>
+                                <figure>
+                                    <p><img src="img/tagsH1aH6.jpg" alt="tags h1 a h6 em código e nob rowser" class="respon-img pfig"></p>
+                                    <figcaption>
+                                        <p ><i>Fig.2 - </i><small>Observe o efeito do <b>css</b> sobre as tags <b>h2 </b>e <b>h3</b></small></p>
+                                        <p><small>Com CSS podemos estilizar nossa página - isso é tema para outro tutorial</small></p>									
+                                    </figcaption>
+                                </figure>
+                                <hr>										
+                        </li> <!--final ol li tags h1 a h6-->
+                    
+                        <li id="lista_numerada_ordenada"><!-- ol li tag listas numeradas e ordenadas-->
+                            <p><b><code>&lt; ol &gt;</code> </b><b><code>&lt; /ol &gt;</code></b> Listas ordenadas  ou numeradas.</p>
+                            <br>
+                            <p> Se na lista OL inicial você não especificar um atributo type ( i, I, a, A ) a lista será por padrão, numerada</p>
+                            <p>É simples trabalhar com listas ... só é preciso praticar um pouco</p>
+                            <br>						
+                            <p><b>Type 1:</b></p>
+                            <p>Type 1 - primeiro item </p>
+                            <p>Type 2 - segundo item </p>
+                            <p>Type 3 - terceiro item </p>
+                            <br>
+                            <p><b>Type i:</b></p>
+                            <p>Type i - primeiro item </p>
+                            <p>Type ii - segundo item </p>
+                            <p>Type iii - terceiro item </p>
+                            <p>Type iv - quarto item </p>
+                            <br>
+                            <p><b>Type I:</b></p>
+                            <p>Type I - primeiro item </p>
+                            <p>Type II - segundo item </p>
+                            <p>Type III - terceiro item </p>
+                            <p>Type IV - quarto item </p>
+                            <br>
+                            <p><b>Type a:</b></p>
+                            <p>Type a - primeiro item </p>
+                            <p>Type b - segundo item </p>
+                            <p>Type c - terceiro item </p>
+                            <br>
+                            <p><b>Type A:</b></p>
+                            <p>Type A - primeiro item </p>
+                            <p>Type B - segundo item </p>
+                            <p>Type c - terceiro item </p>
+                            <br>
+
+                            <p>Exemplo:</p>
+                            <br>
+                            <h3>Lista de prioridades</h3>
+                            <ol type = "I" > <!-- exemplo di lista ordenada / numerada-->					
+                                <li> <h2> HOJE </h2> </li>
+                                    <ol type = "1"> <!--manhã-->
+                                        <li><h3>Manhã</h3></li>
+                                            <ol type = "a">
+                                                <li>Nadar</li>
+                                                <li>Dar banho no cachorro</li>
+                                                <li>Encomendar ração</li>
+                                            </ol>
+                                        </li>								
+                                    <br>
+                                        <li><h3>Tarde</h3></li>
+                                            <ol type="a">
+                                                <li>Pagar as contas</li>
+                                                <li>Aula de inglês</li>
+                                                <li>Estudar</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li><!--final hoje-->
+                                <br>
+                                <br>
+                                <li> <h2> AMANHÃ </h2> </li>
+                                    <ol type="1"><!--manhã-->
+                                        <li><h3>Manhã</h3></li>
+                                            <ol type="a">
+                                                <li>Aula de yoga</li>
+                                                <li>Trabalho home office</li>
+                                                <li>13:00 h - Almoço / reunião</li>
+                                            </ol>
+                                        </li>
+                                        <br>						
+                                        <li><h3>Tarde</h3></li>
+                                            <ol type="a">
+                                                <li>Trabalho escritório</li>
+                                                <li>Entrega de relatório</li>
+                                                <li>Reunião de equipe</li>
+                                                <li>Pegar salgados para o aniversário do chefe</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li><!--final hoje-->
+                            </ol> <!-- final exemplo de lista ordenada / numerada-->
+                            <br>
+                            <h3>Para ver o código da lista acima, use o inspetor de elementos - você pode clicar, ao lado dela, na tela, com o lado direito do mouse e então abra o inspetor de elementos e treine fazendo essa tabela no seu <abbr title="Visual Studio Code">VSC</abbr></h3>
+                            <p>------------</p>
+                            <p>Listas ordenadas são simples de utilizar, sendo preciso apenas praticar e entender sua estrutura e então podemos colocar uma dentro da outra quantas vezes forem necessárias e um exemplo são categorias, subcategorias, sub subcategorias e assim por diante.</p>
+                            <br>
+                            <p>Exemplo simples do código de lista numerada com type padrão:</p>
+
+                            <p><code>&lt;ol&gt;</code></p>
+                            <p>&nbsp &nbsp &nbsp<code>&lt;h4&gt;</code><code>&lt;b&gt;</code>Links:<code>&lt;/b&gt;</code><code>&lt;h4&gt;</code>
+                            <p>&nbsp &nbsp &nbsp <code>&lt; li &gt;</code><code>&lt; a href="https://www.w3schools.com/" &gt;</code>W3 schools<code>&lt; /a &gt;</code><code>&lt; /li &gt;</code></p>
+                                    
+                            <p>&nbsp &nbsp &nbsp <code>&lt; li &gt;</code><code>&lt; a href="https://learn.microsoft.com/pt-pt/power-platform/power-fx/reference/function-colors" &gt;</code>Paleta de cores<code>&lt; /a &gt;</code><code>&lt; /li &gt;</code></p>
+                            <p><code>&lt;/ol&gt;</code></p>
+                            <br>
+                            <p>No navegador:</p>
+                            <ol><!--links e telefones uteis - codigo-->
+                                <h4>Links:</h4>
+                                <li><a href="https://www.w3schools.com/">W3 schools</a></li>
+                                <li><a href="https://learn.microsoft.com/pt-pt/power-platform/power-fx/reference/function-colors">Paleta de cores</a></li>
+                                <p>---------------------------------</p>
+                                <br>
+                                <p><img src="img/logoMaoDireita.png" width="20" height="20"> Abaixo um exemplo de lista ordenada ( cotendo item 1 e item 2 ) com lista não ordenada dentro. Experimente fazer uma lista não ordenada com uma lista ordenada dentro.</p>
+                                <p>Código:</p> 
+
+                                <p><code>&lt; ol &gt;</code></p>
+                                <p>&nbsp &nbsp &nbsp<code>&lt; li &gt;</code></p>
+                                <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; h3 &gt;</code>Links úteis<code>&lt; /h3 &gt;</code></p>
+                                <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; ul &gt;</code></p>
+                                <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; li &gt;</code><code>&lt; a href="https://www.w3schools.com/"&gt;</code>W3 schools<code>&lt; /a &gt;</code><code>&lt; li &gt;</code></p>
+                                <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; li &gt;</code><code>&lt; a href="https://www.w3schools.com/html/html_emojis.asp"&gt;</code>Emojis html<code>&lt; /a &gt;</code><code>&lt; li &gt;</code></p>				
+                                <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; li &gt;</code><code>&lt; a href="https://learn.microsoft.com/pt-pt/power-platform/power-fx/reference/function-colors" &gt;</code>Paleta de cores<code>&lt; /a &gt;</code><code>&lt; li &gt;</code></p>
+                                <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; /ul &gt;</code></p>
+                                <p>&nbsp &nbsp &nbsp<code>&lt; /li &gt;</code></p>
+                                <br>
+                                <p>&nbsp &nbsp &nbsp<code>&lt; li &gt;</code></p>
+                                <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; h3 &gt;</code>Telefones úteis<code>&lt; /h3 &gt;</code></p>
+                                <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; ul &gt;</code></p>
+                                <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; li &gt;</code>Bombeiros - 193<code>&lt; li &gt;</code></p>
+                                <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; li &gt;</code>Polícia Militar - 190<code>&lt; li &gt;</code></p>				
+                                <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; li &gt;</code>Polícia civil - 197<code>&lt; li &gt</code></p>
+                                <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; ul &gt;</code>
+                                <p>&nbsp &nbsp &nbsp<code>&lt; li &gt;</code>
+                                <p><code>&lt; ol &gt;</code>
+                                <br>
+                            </ol><!--final links e telefones uteis - codigo-->
+
+                            <p>No navegador:</p>
+
+                            <ol><!--links e telefones uteis - no navegador-->
+                                    <li><!--links uteis-->
+                                        <h3>Links úteis</h3>
+                                        <ul>
+                                            <li><a href="https://www.w3schools.com/">W3 schools</a></li>
+                                            <li><a href="https://www.w3schools.com/html/html_emojis.asp">Emojis html</a></li>				
+                                            <li><a href="https://learn.microsoft.com/pt-pt/power-platform/power-fx/reference/function-colors">Paleta de cores</a></li>
+                                        </ul>
+                                    </li><!--links uteis-->
+
+                                    <li><!--telefones uteis-->
+                                        <h3>Telefones úteis</h3>
+                                        <ul>
+                                            <li><p>Bombeiros - 193</p></li>
+                                            <li><p>Polícia Militar - 190</p></li>				
+                                            <li><p>Polícia civil - 197</p></li>
+                                        </ul>
+                                    </li><!--telefones uteis-->
+                            </ol><!--links e telefones uteis - no navegador-->
+
+                            <hr>
+
+                        </li><!--final ol li tag listas ordenadas-->
+
+                        <li id="lista_não_ordenada"><!-- ol li tag listas não ordenadas-->
+                            <p><b><code>&lt; ul &gt;</code> </b><b><code>&lt; /ul &gt;</code></b> Listas não ordenadas - Adicionam marcadores antes dos elementos. </p>
+                            <br>
+                            <p> Se na lista UL inicial você não especificar um atributo ( circle ou square) a lista virá por padrão, com o atributo type="disc", que é um círculo preto. O atributo <b>circle</b> é um círculo vazio e <b>square</b> é um quadradinho preto</p>
+                            <br>
+                            <p>Exemplo:</p>
+                            <br> 
+
+                            <ul type="square"> <!-- exemplo Receita - lista não ordenada-->					
+                                <li> <h2>Receita</h2> </li>
+                                    <ul type = "disc"> <!--manhã-->
+                                        <li><h3>Omelete</h3></li>
+                                            <ul type = "circle">
+                                                <li>3 ovos</li>
+                                                <li>1 colher manteiga</li>
+                                                <li>queijo prato</li>
+                                                <li>manjericão</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul><!--final exemplo Receita - lista não ordenada-->
+
+                            <br>
+                            <br>
+                            <p><small>Para ver o código da lista acima, use o inspetor de elementos - você pode clicar, ao lado dela, na tela, com o lado direito do mouse e então abra o inspetor de elementos e treine fazendo essa tabela no seu <abbr title="Visual Studio Code">VSC</abbr></small></p>
+                            <br>
+                            <hr>
+                            <hr>
+                            
+                            <p>Abaixo um exemplo de <b>lista ordenada ( cotendo item 1 e item 2 ) com lista não ordenada dentro</b>. <small>Experimente fazer uma lista não ordenada com uma lista ordenada dentro.</small></p>
+                            <p>Código:</p> 
+
+                            <p><code>&lt; ol &gt;</code></p>
+                            <p>&nbsp &nbsp &nbsp<code>&lt; li &gt;</code></p>
+                            <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; h3 &gt;</code>Links úteis<code>&lt; /h3 &gt;</code></p>
+                            <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; ul &gt;</code></p>
+                            <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; li &gt;</code><code>&lt; a href="https://www.w3schools.com/"&gt;</code>W3 schools<code>&lt; /a &gt;</code><code>&lt; li &gt;</code></p>
+                            <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; li &gt;</code><code>&lt; a href="https://www.w3schools.com/html/html_emojis.asp"&gt;</code>Emojis html<code>&lt; /a &gt;</code><code>&lt; li &gt;</code></p>				
+                            <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; li &gt;</code><code>&lt; a href="https://learn.microsoft.com/pt-pt/power-platform/power-fx/reference/function-colors" &gt;</code>Paleta de cores<code>&lt; /a &gt;</code><code>&lt; li &gt;</code></p>
+                            <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; /ul &gt;</code></p>
+                            <p>&nbsp &nbsp &nbsp<code>&lt; /li &gt;</code></p>
+                            <br>
+                            <p>&nbsp &nbsp &nbsp<code>&lt; li &gt;</code></p>
+                            <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; h3 &gt;</code>Telefones úteis<code>&lt; /h3 &gt;</code></p>
+                            <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; ul &gt;</code></p>
+                            <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; li &gt;</code>Bombeiros - 193<code>&lt; li &gt;</code></p>
+                            <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; li &gt;</code>Polícia Militar - 190<code>&lt; li &gt;</code></p>				
+                            <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; li &gt;</code>Polícia civil - 197<code>&lt; li &gt;</code></p>
+                            <p>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<code>&lt; ul &gt;</code>
+                            <p>&nbsp &nbsp &nbsp<code>&lt; li &gt;</code>
+                            <p><code>&lt; ol &gt;</code><!--final links e telefones uteis - codigo-->
+                            <br>
+
+                            <p>No navegador:</p>
+
+                            <ol><!--links e telefones uteis - no navegador-->
+                                <li><!--links uteis-->
+                                        <h3>Links úteis</h3>
+                                        <ul>
+                                            <li><a href="https://www.w3schools.com/">W3 schools</a></li>
+                                            <li><a href="https://www.w3schools.com/html/html_emojis.asp">Emojis html</a></li>				
+                                            <li><a href="https://learn.microsoft.com/pt-pt/power-platform/power-fx/reference/function-colors">Paleta de cores</a></li>
+                                        </ul>
+                                </li><!--links uteis-->
+
+                                <li><!--telefones uteis-->
+                                        <h3>Telefones úteis</h3>
+                                        <ul>
+                                            <li><p>Bombeiros - 193</p></li>
+                                            <li><p>Polícia Militar - 190</p></li>				
+                                            <li><p>Polícia civil - 197</p></li>
+                                        </ul>
+                                </li><!--telefones uteis-->
+                            </ol><!--links e telefones uteis - no navegador-->
+
+                            <hr>
+
+                        </li><!--final ol li tag listas não  ordenadas-->
+
+                        <li id="address"><!-- ol li tag address-->
+                            <p><b><code>&lt; address &gt;</code> </b><b><code>&lt; /address &gt;</code></b> Usada para endereços.</p>
+                            <p>Código:</p>
+                            <p><code>&lt; address &gt;</code> </p>
+                            <p><code>&lt; p &gt;</code> Onde estamos <code>&lt; /p &gt;</code></p>
+                            <p><code>&lt; p &gt;</code> Piúma - ES <code>&lt; /p &gt;</code></p>
+                            <p><code>&lt; p &gt;</code> CEP: 29.285-000 <code>&lt; /p &gt;</code></p>
+                            <p><x-small><code>&lt; iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119322.8124381</p>
+                            <p>5296!2d-40.83487243!2m3!1f0!2f0!3f0!3m29587!3d-20.8382517</p>
+                            <p>2644038545!1i1024!2i768!4f131!3m3!1m2!1s0xb91a3707631</p>
+                            <p>13f%3A0x9ea1d6e46b179a08!2s</p>
+                            <p>3%BAma%20-%20ES!5e0!3m2!1spt-BR!2sbr!4v166765181Pi%C</p>
+                            <p>5663!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" &gt;</code><code>&lt; /iframe &gt;</code></x-small></p>
+                            <p><code>&lt; a href = "mailto:sol.morcillo@yahoo.com"&gt;</code> <code>&lt; abbr title="Me enviar um e-mail" &gt;</code> E-mail <code>&lt; /abbr &gt;</code> <code>&lt; /a &gt;</code></p>
+                            <p><code>&lt; a href = "https://wa.me/5528988069681"&gt;</code> <code>&lt; abbr title="Conversar pelo whatsApp" &gt;</code>WhatsApp <code>&lt; /abbr &gt;</code><code>&lt; /a &gt;</code></p>
+                            <p><code>&lt; /address &gt;</code> </p>
+                            <br>
+                            <p>No navegador:</p>
+                            <br>
+                            <address>
+                            <p>Onde estamos</p>
+                            <p>Piúma - ES</p>
+                            <p>CEP: 29.285-000</p>
+                            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119322.81243815296!2d-40.83440385459587!3d-20.838251726487243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb91a370763113f%3A0x9ea1d6e46b179a08!2sPi%C3%BAma%20-%20ES!5e0!3m2!1spt-BR!2sbr!4v1667651815663!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                            <p><a href="mailto:sol.morcillo@yahoo.com"><abbr title="Me enviar um e-mail">E-mail</abbr></a></p>
+                            <p><a href="https://wa.me/5528988069681"><abbr title="Conversar pelo WhatsApp">WhatsApp</abbr></a></p>
+                            </address>
+
+                            <hr>						
+                        </li><!--final ol li tag address-->
+                        <p id="footer"></p>
+                        <li ><!-- ol li tag footer-->
+                            <p><b><code>&lt; footer &gt;</code> </b><b><code>&lt; /footer &gt;</code></b> Utilizado para conter informações como links de mapa do site, endereços, telefones, links para redes sociais e normalmente fica ao final da página, mas também pode ser colocado dentro de algumas tags desde que mantenha esse propósito específico de um footer.</p>
+                            <p>Para ver um exemplo de código de um footer, sugiro que vá até o rodapé dessa página e abra o inspetor de elementos e também acesse sites com rodapés mais complexos para que possa ver quanta informação pode conter um footer.</p>
+                                        
+                        </li><!--final ol li tag footer-->
+
+                    </ol><!--final tags html-->
+
+
+                </div><!--final art - introdução e tags html-->
+
+                <div class="texto"><!--texto final-->
+                    <hr>
+                    <hr>
+                    <h4>Espero que esse tutorial tenha ajudado</h4>
+                    <p>Treinem e treinem pois é praticando que aprendemos</p>
+                    <p>ATÉ MAIS !!!</p>
+                    <hr>
+                    <hr>
+                <div><!--final texto final-->		
+            </article><!--final tags-->
+            
+            <section id="referencias" class="referencias">
+                <h3>Referências bibliográficas</h3>
+                <ol><!--principal-->
+                    <li><!--1 - DIO-->
+                        <blockquote>DIO - <q>Digital Innovation One Inc.</q><cite>
+                            <a href="https://www.dio.me/">https:www.dio.me</a></cite>
+                        </blockquote><br>
+                    </li><!--dio-->
+
+                    <li><!--2 - NTT-->
+                        <blockquote>NTT DATA - <q>Serviços e consultoria de TI</q>
+                            <cite>
+                                <a href="https://www.nttdata.com/">https:www.nttdata.com</a>
+                            </cite>
+                        </blockquote>
+                    </li><br><!--ntt-->
+
+                    <li><!--3- Diogo Mainardes-->
+                        <blockquote>Diogo Mainardes - <q>Professor - DIO - NTT DATA</q><cite><a href="https://br.linkedin.com/in/diogomainardes">https://br.linkedin.com/in/diogomainardes</a></cite>
+                        </blockquote>
+                    </li><!--diogo mainardes-->
+                        
+                    <li><!--4 - VSC-->
+                        <ul><p>Visual Studio Code</p>
+                            <li><!--wikipedia-vsc-->
+                                <blockquote>Wikipédia - <q>Sobre o Visual Studio Code</q><cite><a href="https://pt.wikipedia.org/wiki/Visual_Studio_Code">https://pt.wikipedia.org/wiki/Visual_Studio_Code</a></cite>
+                                </blockquote>
+                            </li><!--final wikipedia-vsc--><br>
+                            <li><!--como instalar-->
+                                <blockquote>Carreira Desenvolvedor - <q>Como instalar o VSC</q><cite><a href="https://youtu.be/9miOzgB4KC0/">https://youtu.be/9miOzgB4KC0/</a></cite>
+                                </blockquote>
+                            </li><!--final como instalar-->
+                        </ul><!--final visual studio code-->
+                    </li><!--final 4 - VSC-->
+
+                    <li><!--5-Chorme-->
+                        <ul><p>Chrome</p>
+                            <li>
+                                <blockquote>Wikipédia - <q>Sobre o Chrome</q><cite><a href="https://pt.wikipedia.org/wiki/Google_Chrome">hhttps://pt.wikipedia.org/wiki/Google_Chrome</a></cite>
+                                </blockquote><br>
+                            </li>
+                            <li>
+                                <blockquote>Espaço zero - <q>Como instalar o Chrome</q><cite><a href="https://youtu.be/jTLBM5HvugA">https://youtu.be/jTLBM5HvugA</a></cite>
+                                </blockquote><br>
+                            </li>
+                        </ul>
+                    </li><!--final 5-Chorme-->
+
+                    <li><!--6 - Inspetor de elementos do Chrome-->
+                        <blockquote>dwp - <q>Como usar o Inspetor de elementos do Chrome</q><cite><a href="https://youtu.be/KMZKWCcTkm4">https://youtu.be/KMZKWCcTkm4</a></cite>
+                        </blockquote><br>
+                    </li><!--final 6 - Inspetor de elementos do Chrome-->
+
+                    <li><!--7 - Criar proj html no VSC-->
+                        <blockquote>Caminho do código - <q>Como criar um projeto Html no Visual Studio Code</q><cite><a href="https://youtu.be/grx667IwkH8">https://youtu.be/grx667IwkH8</a></cite>
+                        </blockquote><br>
+                    </li><!--final 7 - criar proj html no vsc-->
+
+                </ol><!--final principal -->
+            </section><!--final refer-->
+            
+            <footer>
+                <address class="foot">
+
+                    <hr>
+
+                    <div class="volte logo">
+                        <img src="img/logo_volteSempre.fw.png">
+                    </div><!--final logo-->
+
+                    <hr>
+
+                    <div id="linkedin" class="sol">
+                        <a href="https://br.linkedin.com/in/sol-morcillo-13246255"><img src="img/logoLinkedin.png" width="25" height="25"></a>
+                    </div><!--final linkedin-->
+
+                    <div id="github" class="sol">
+                        <a href="https://github.com/QSoll"><img src="img/logoGithub.png" width="25" height="25"></a>
+                    </div><!--final github-->
+
+                </address> <!--final foot-->
+            </footer>		
+        
+            <div class="rod-fixo">
+                <ul class="rod-itens">
+                    <li class="rod-item"><a href="https://wa.me/5528988069681" ><abbr title=" Conversar no WhatsApp">28 98806-9681</a></li>		
+                    <li class="rod-item"><a href="#inicio" ><abbr title="Ir para o topo da página"><sub><img src="img/logoMaoCima.fw.png" width="26" height="26"></sub> Topo</a></li>
+                               
+                    <div id="conteudo"><!--conteudo - todos os itens mencionados-->
+                        <div class="cont-item"><a href="#VSC" class="cont-a">Visual Studio Code</a></div>		
+                        <div class="cont-item"><a href="#chrome" class="cont-a">Chrome</a></div>
+                        <div class="cont-item"><a href="#inspetor_de_elementos" class="cont-a">Inspetor de elementos</a></div>		
+                        <div class="cont-item"><a href="#estrutura_basica" class="cont-a">Estrutura básica</a></div>
+                        <div class="cont-item"><a href="#html" class="cont-a">html</a></div>
+                        <div class="cont-item"><a href="#head" class="cont-a">head</a></div>
+                        <div class="cont-item"><a href="#body" class="cont-a">body</a></div>
+                        <div class="cont-item"><a href="#comentarios" class="cont-a">comentarios</a></div>
+                        <div class="cont-item"><a href="#header" class="cont-a">header</a></div>
+                        <div class="cont-item"><a href="#h1" class="cont-a">h1</a></div>
+                        <div class="cont-item"><a href="#p" class="cont-a">p</a></div>
+                        <div class="cont-item"><a href="#br" class="cont-a">br</a></div>
+                        <div class="cont-item"><a href="#hr" class="cont-a">hr</a></div>
+                        <div class="cont-item"><a href="#i" class="cont-a">i</a></div>
+                        <div class="cont-item"><a href="#p" class="cont-a">p</a></div>
+                        <div class="cont-item"><a href="#mark" class="cont-a">mark</a></div>
+                        <div class="cont-item"><a href="#small" class="cont-a">small</a></div>
+                        <div class="cont-item"><a href="#sup" class="cont-a">sup</a></div>
+                        <div class="cont-item"><a href="#sub" class="cont-a">sub</a></div>
+                        <div class="cont-item"><a href="#b" class="cont-a">b</a></div>
+                        <div class="cont-item"><a href="#strong" class="cont-a">strong</a></div>
+                        <div class="cont-item"><a href="#q" class="cont-a">q</a></div>
+                        <div class="cont-item"><a href="#blockquote-cite" class="cont-a">blockquote</a></div>
+                        <div class="cont-item"><a href="#blockquote-cite" class="cont-a">cite</a></div>
+                        <div class="cont-item"><a href="#abbr" class="cont-a">abbr</a></div>
+                        <div class="cont-item"><a href="#a" class="cont-a">a</a></div>
+                        <div class="cont-item"><a href="#h1ateH6" class="cont-a">h1 a h6</a></div>
+                        <div class="cont-item"><a href="#lista_numerada_ordenada" class="cont-a">listas/ordenadas</a></div>
+                        <div class="cont-item"><a href="#lista_não_ordenada" class="cont-a">listas/não ordenadas</a></div>
+                        <div class="cont-item"><a href="#address" class="cont-a">address</a></div>
+                        <div class="cont-item"><a href="#footer" class="cont-a">footer</a></div>
+                        <div class="cont-item"><a href="#referencias" class="cont-a">ref.bibliográficas</a></div>
+                    </div><!--final conteudo-->
+                 
+                    <div id="info">
+                        <li class="info"><small>&copy 2022 . Todos os direitos reservados . Web developer Sol Morcillo</small></li>	
+                    </div><!--final info-->
+                </ul>  <!--final rod-itens-->				
+            </div><!--final rod-fixo-->
+			
+		</div>	<!--final container-->
+
+	</body>
+</html>
