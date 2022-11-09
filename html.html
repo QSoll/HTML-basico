@@ -172,9 +172,53 @@
                         
                 <div id="html" class="art"><!--introdução e tags html-->
                     <!--introdução-->
-                    <p>Com exceção de algumas, a maioria das tags tem uma abertura <b> <code>&lt;  &gt;</code></b> e um fechamento <strong> <code>&lt; / &gt;</code> </strong></p>
-                    <p>A seguir, vamos abordar sobre as tags mais utilizadas:</p>
-                    <BR>
+                    <h4>Vamos começar com duas coisas muito importantes quando estamos codando:</h4>
+                    <ol>
+                    <li><p> Adicionar espaço entre palavras ou qualquer outro elemento.</p></li>
+                    <li><p> Como fazer comentários no código sem que apareça no navegador.</p></li>
+                    </ol>
+                    <br>
+                    <p id="espaco"><!--  como fazer espaco  em html-->
+                            <p><!-- ol li tag espaçoo-->
+                            <p><img src="img/logoMaoDireita.png" width="20" height="20"> Quando estamos codando, é muito comum precisarmos colocar espaço entre palavras, imagens, ou entre qualquer elemento</p>
+                            <p>- Como podemos fazer isso? <img src="img/logoMaoBaixo.png" width="20" height="20"></p>
+                                <p>- Usando &nbsp; <b > & n b s p ; </b>&nbsp; &nbsp; escrito junto, sem dar espaço</p>
+                                <br>
+                                <p>Código:</p>  
+                                <p><code>&lt;p&gt;</code> Dando dois espaços entre as palavras: COMEÇO & n b s p ; &nbsp; & n b s p ; FIM<code>&lt; /p &gt;</code> </p>
+                                <br>            
+                                <p>No navegador:</p>
+                                <p>Dando dois espaços entre as palavras: COMEÇO  &nbsp;  &nbsp; FIM</p>
+                                <br>
+                                <br>							
+                    </p><!--final comofazer comentários em html-->	 
+
+                    <p id="comentarios"><!--  como fazer comentários  em html-->
+                            <p><!-- ol li tag comentario-->
+                            <br>                       
+                            <p><img src="img/logoMaoDireita.png" width="20" height="20"> E como fazemos um comentário no código? <img src="img/logoMaoBaixo.png" width="20" height="20"></p>
+                                <p>- Usando o &nbsp; <b><code>&lt; !-- Comentário --&gt;</code> </b> </p>
+                                <p>Código:</p>
+
+                                <p ><code>&lt;p&gt;</code> 1- Muito usado para deixar o código mais organizado. <code>&lt; /p &gt;</code> </p>
+                                <p style="color:green"><code>&lt;!-- Comentários não aparecem no navegador--&gt;</code> </p>
+                                        
+                                <p><code>&lt;p&gt;</code> 2- Sempre bom usar para explicar o que está sendo codado. <code>&lt; /p &gt;</code> </p>
+                                <br>
+                                <p>No navegador:</p>
+                                <p>1- Muito usado para deixar o código mais organizado.</p>
+                                <p>2- Sempre bom usar para explicar o que está sendo codado.</p>
+                                <hr>						
+                    </p><!--final comofazer comentários em html-->	
+                    <hr>
+                    <br>
+                    <h2>Agora vamos falar sobre as TAGs básicas mais utilizadas e que estão de acordo com o HTML5</h2>
+                    <br>
+                    <p>A maioria das tags tem uma abertura <b> <code>&lt;  &gt;</code></b> e um fechamento <strong> <code>&lt; / &gt;</code> </strong></p>
+                    <p>Algumas não precisam de fechamento, como por exemplo as tags <b>b</b>, <b>br</b>, <b>hr</b> e outras, como veremos mais adiante</p>
+                    <p>Outras, por sua vez, é opcional utilizar fechamento, mas eu sempre uso, por questão de organização</p>
+                    <br>
+                    <br>
                     <!--fim introdução-->
                     <ol> <!-- tags html-->
 
@@ -193,26 +237,6 @@
                             <p><b><code>&lt; body &gt;</code> <code>&lt; /body &gt;</code></b> - Dentro dela teremos o conteúdo de todo o site. Small> Ver <a href="#fig1"><i>Fig.1</i> </a> </p>
                             <hr>	
                         </li><!--final tag body-->
-                            
-                        <p id="comentarios"><!--  como fazer comentários  em html-->
-                            <p><!-- ol li tag comentario-->
-                            <hr>
-                            <p><img src="img/logoMaoDireita.png" width="20" height="20"> Quando estamos codando, é muito comum precisarmos fazer comentários, mas que não podem aparecer no navegador</p>
-                            <p>Como podemos fazer isso? <img src="img/logoMaoBaixo.png" width="20" height="20"></p>
-                                <p>Usando o <b><code>&lt; !-- Comentário --&gt;</code> </b> </p>
-                                <p>Código:</p>
-
-                                <p ><code>&lt;p&gt;</code> 1- Muito usado para deixar o código mais organizado. <code>&lt; /p &gt;</code> </p>
-                                <p style="color:green"><code>&lt;!-- Comentários não aparecem no navegador--&gt;</code> </p>
-                                        
-                                <p><code>&lt;p&gt;</code> 2- Sempre bom usar para explicar o que está sendo codado. <code>&lt; /p &gt;</code> </p>
-                                <br>
-                                <p>No navegador:</p>
-                                <p>1- Muito usado para deixar o código mais organizado.</p>
-                                <p>2- Sempre bom usar para explicar o que está sendo codado.</p>
-                                <hr>
-                                <hr>							
-                        </p><!--final comofazer comentários em html-->	
 
                         <p><!-- introdução para outras tags html-->
                             <img src="img/logoMaoDireita.png" width="20" height="20"> <small>Indo além dessa estrutura criada rapidamente, temos muitas outras tags elementares, como:</small>
@@ -865,6 +889,7 @@
                         <div class="cont-item"><a href="#head" class="cont-a">head</a></div>
                         <div class="cont-item"><a href="#body" class="cont-a">body</a></div>
                         <div class="cont-item"><a href="#comentarios" class="cont-a">comentarios</a></div>
+                        <div class="cont-item"><a href="#espaco" class="cont-a">espaço</a></div>
                         <div class="cont-item"><a href="#header" class="cont-a">header</a></div>                       
                         <div class="cont-item"><a href="#footer" class="cont-a">footer</a></div>
                         <div class="cont-item"><a href="#h1" class="cont-a">h1</a></div>
